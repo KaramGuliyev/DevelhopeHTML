@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Enter your personal details</h2>
+    <h3>Fields with * are required!</h3>
+    <form>
+      <label for="first_name">*First name:</label>
+      <input type="text" name="first_name" id="first_name" required maxlength="20">
+      
+      <label for="last_name">*Last name:</label>
+      <input type="text" name="last_name" id="last_name" required maxlength="20">
+      
+      <label for="email">*Email:</label>
+      <input type="email" name="email" id="email" required placeholder="karam@guliyev.com">
+      
+      <label for="password">*Password:</label>
+      <input type="password" name="password" id="password" minlength="8" maxlength="50" required >
+      
+      <label for="phone_number">Telephone number:</label>
+      <input type="number" name="phone_number" id="phone_number" max="16">
+      
+      <label for="birthday">Date of birth:</label>
+      <input type="date" name="birthday" id="birthday">
+      <br> <br>
+      
+      
+      <label for="plan">Choose the plan</label>
+      <select name="plan" id="plan">
+        <option value="free_plan">Free Plan</option>
+        <option value="plan_1">Plan 1 For 4.99$</option>
+        <option value="plan_2">Plan 2 For 9.99$</option>
+        <option value="plan_3">Plan 3 For 14.99$</option>
+      </select>
+        <br> <br>
+        <label for="pro_plan">You can also take <b>PRO PLAN!</b></label>
+        <input type="checkbox" id="pro_plan" name="pro_plan" value="yes">
+
+      <hr>
+      <label for="card_number">Credit card number:</label>
+      <input type="number" name="card_number" id="card_number" max="16" min="16" placeholder="1234567891011121">
+
+      <label for="cvc">CVC:</label>
+      <input type="number" name="cvc" id="cvc" min="3" max="3" placeholder="123">
+      
+      <label for="expiration_date">Expiration date:</label>
+      <input type="date" name="expiration_date" id="expiration_date">
+
+      <label for="billing_address">Billing Address:</label>
+      <input type="text" name="billing_address" id="billing_address" maxlength="100">
+      <br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
